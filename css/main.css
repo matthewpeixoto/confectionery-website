@@ -6,6 +6,8 @@ body {
   min-width: 320px;
 }
 
+/* ------------- =Masthead -------------- */
+
 .masthead {
   background-color: #E91E63;
 }
@@ -15,7 +17,11 @@ header a {
   text-decoration: none;
 }
 
-ul a {
+nav ul {
+  padding-bottom: 2.6rem;
+}
+
+nav li {
   border-bottom: 1px solid #F06292;
 }
 
@@ -65,3 +71,84 @@ header a:hover {
 .nav-check:checked:hover ~ .nav-label {
   background-position: 0 -156px;
 }
+
+/* ------------- =Banner -------------- */
+
+.banner-content {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+
+@media only screen and (min-width: 46em) {
+
+  .nav {
+    display: block;
+  }
+
+  .nav-label, .nav-check {
+    display: none;
+    background: none;
+  }
+
+  nav ul {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+
+  nav li {
+    display: inline-block;
+
+    border: none;
+  }
+
+}
+
+/* ------------- =Banner -------------- */
+
+.banner {
+  height: calc(100vh - 120px);
+  max-height: 640px;
+  min-height: 420px;
+}
+
+.banner-content-wrapper {
+  height: 40%;
+}
+
+.banner-img {
+  height: 60%;
+  background: url("../images/photos/banner-img.jpg") center top / cover no-repeat;
+}
+
+figure {
+  height: 60%;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .banner {
+    max-height: 960px;
+    min-height: 500px;
+  }
+
+}
+
+@media only screen and (min-width: 68em) {
+
+  .banner-content-wrapper {
+    height: 30%;
+  }
+
+  .banner-img {
+    height: 70%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    height: calc(100vh - 240px);
+  }

@@ -25,22 +25,26 @@
     <input type="checkbox" class="nav-check" id="nav-check">
     <label class="nav-label ir" for="nav-check">Navigate</label>
     <nav role="navigation" class="nav" id="nav">
-      <ul class="list-group text-left gutter-2 pad-b-2">
-        <li><a class="block pad-t pad-b" href="#">Item 1</a></li>
-        <li><a class="block pad-t pad-b" href="#">Item 2</a></li>
-        <li><a class="block pad-t pad-b" href="#">Item 3</a></li>
-        <li><a class="block pad-t pad-b" href="#">Item 4</a></li>
-        <li><a class="block pad-t pad-b" href="#">Item 5</a></li>
+      <ul class="list-group text-left gutter-2 push-0 center">
+        <li><a class="block pad-t pad-b gutter-1-2" href="#">Item 1</a></li>
+        <li><a class="block pad-t pad-b gutter-1-2" href="#">Item 2</a></li>
+        <li><a class="block pad-t pad-b gutter-1-2" href="#">Item 3</a></li>
+        <li><a class="block pad-t pad-b gutter-1-2" href="#">Item 4</a></li>
+        <li><a class="block pad-t pad-b gutter-1-2" href="#">Item 5</a></li>
       </ul>
     </nav>
   </header>
 
   <main role="main" id="main">
-    <a class="banner text-center">
-      <div class="banner-content">
-        <h2>Candy for all.</h2>
-      </div>
-    </a>
+      <a class="banner block text-center" href="#">
+        <div class="banner-content-wrapper block relative">
+          <div class="banner-content absolute">
+            <h2 class="push-0">Lollipopilicious</h2>
+            <span class="push-0">Check out our sweet prices &gt;</span>
+          </div>
+        </div>
+        <div class="banner-img"></div>
+      </a>
   </main>
 
   <footer role="contentinfo" class="footer">
