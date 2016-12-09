@@ -2,12 +2,13 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Beau’s Bonbons</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 </head>
 <body>
 
@@ -16,25 +17,20 @@
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <header>
+  <header role="banner" class="masthead text-center">
     <a href="#">
       <h1>Beau’s Bonbons</h1>
     </a>
 
     <input type="checkbox" class="nav-check" id="nav-check">
-    <label class="nav-label" for="nav-check">
-      <img class="nav-icon" src="images/nav-icon.svg" alt="Open Navigation">
-      <img class="nav-icon-hover" src="images/nav-icon-hover.svg" alt="Open Navigation">
-      <img class="nav-icon-close" src="images/nav-icon-close.svg" alt="Close Navigation">
-      <img class="nav-icon-close-hover" src="images/nav-icon-close-hover.svg" alt="Close Navigation">
-    </label>
-    <nav role="navigation" class="nav" id="nav">
-      <ul>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#preserve">Preserves</a></li>
-        <li><a href="#soap">Soaps</a></li>
-        <li><a href="#chef">Chefs</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <label class="nav-label" for="nav-check">Navigate</label>
+    <nav role="navigation" class="nav text-left" id="nav">
+      <ul class="list-group gutter-2 pad-b-2">
+        <li><a class="block pad-t pad-b" href="#">Item 1</a></li>
+        <li><a class="block pad-t pad-b" href="#">Item 2</a></li>
+        <li><a class="block pad-t pad-b" href="#">Item 3</a></li>
+        <li><a class="block pad-t pad-b" href="#">Item 4</a></li>
+        <li><a class="block pad-t pad-b" href="#">Item 5</a></li>
       </ul>
     </nav>
   </header>
