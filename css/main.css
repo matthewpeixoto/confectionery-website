@@ -6,6 +6,23 @@ body {
   min-width: 320px;
 }
 
+.btn-candy {
+  padding: 0;
+
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+
+  color: #F06292;
+  line-height: 1;
+}
+
+.btn-candy:hover {
+  background-color: transparent;
+  color: #F06292;
+  border-bottom: 1px solid #F06292;
+}
+
 /* ------------- =Masthead -------------- */
 
 .masthead {
@@ -14,6 +31,7 @@ body {
 
 header a {
   color: #fff;
+  cursor: pointer;
 }
 
 nav li {
@@ -68,6 +86,14 @@ header a:hover {
     display: inline-block;
   }
 
+  .logo-wrapper {
+    text-align: left;
+  }
+
+  .nav-wrapper {
+    text-align: right;
+  }
+
   .nav-label, .nav-check {
     display: none;
     background: none;
@@ -84,25 +110,15 @@ header a:hover {
 /* ------------- =Banner -------------- */
 
 .banner {
-  height: calc(100vh - 125px);
-  max-height: 580px;
-  min-height: 360px;
+  height: calc(100vh - 80px);
+  max-height: 640px;
+  min-height: 420px;
 
   color: #3F51B5;
 }
 
 .banner-content-wrapper {
   height: 40%;
-}
-
-.banner-content {
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
-.banner-btn:hover {
-  border-bottom: 1px solid #FF4081;
 }
 
 .banner-img {
@@ -122,6 +138,12 @@ header a:hover {
 }
 
 @media only screen and (min-width: 68em) {
+
+  .banner {
+    height: calc(100vh - 76px);
+    max-height: 80vh;
+    min-height: 540px;
+  }
 
   .banner-content-wrapper {
     height: 30%;
