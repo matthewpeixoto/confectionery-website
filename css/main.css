@@ -14,11 +14,6 @@ body {
 
 header a {
   color: #fff;
-  text-decoration: none;
-}
-
-nav ul {
-  padding-bottom: 2.6rem;
 }
 
 nav li {
@@ -28,7 +23,7 @@ nav li {
 header a:hover {
   transition: 200ms ease-out;
 
-  color: #FF80AB;
+  color: #F48FB1;
 }
 
 .nav {
@@ -45,15 +40,10 @@ header a:hover {
 }
 
 .nav-label {
-  display: inline-block;
   height: 52px;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 52px;
 
   background: url("../images/icons/nav-icon.svg") 0 0 / 52px auto;
-  cursor: pointer;
 }
 
 .nav-check:hover ~ .nav-label {
@@ -72,29 +62,15 @@ header a:hover {
   background-position: 0 -156px;
 }
 
-/* ------------- =Banner -------------- */
-
-.banner-content {
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
-
 @media only screen and (min-width: 46em) {
 
   .nav {
-    display: block;
+    display: inline-block;
   }
 
   .nav-label, .nav-check {
     display: none;
     background: none;
-  }
-
-  nav ul {
-    display: inline-block;
-    padding-bottom: 0;
   }
 
   nav li {
@@ -108,22 +84,32 @@ header a:hover {
 /* ------------- =Banner -------------- */
 
 .banner {
-  height: calc(100vh - 120px);
-  max-height: 640px;
-  min-height: 420px;
+  height: calc(100vh - 125px);
+  max-height: 580px;
+  min-height: 360px;
+
+  color: #3F51B5;
 }
 
 .banner-content-wrapper {
   height: 40%;
 }
 
-.banner-img {
-  height: 60%;
-  background: url("../images/photos/banner-img.jpg") center top / cover no-repeat;
+.banner-content {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
-figure {
+.banner-btn:hover {
+  border-bottom: 1px solid #FF4081;
+}
+
+.banner-img {
   height: 60%;
+  background: url("../images/photos/banner-img.jpg") center top / auto 100% no-repeat;
+}
+
 }
 
 @media only screen and (min-width: 46em) {
@@ -147,8 +133,25 @@ figure {
 
 }
 
-@media only screen and (min-width: 90em) {
+/* ------------- =Link Cards -------------- */
 
-  .banner {
-    height: calc(100vh - 240px);
+.card {
+  background-color: #f2f2f2;
+  border-top: 2px solid #fff;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .card-border-s {
+    border-right: 2px solid #fff;
   }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  .card-border-l {
+    border-right: 2px solid #fff;
+  }
+
+}
