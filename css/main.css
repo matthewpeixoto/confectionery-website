@@ -6,7 +6,7 @@ body {
   min-width: 320px;
 }
 
-section-light {
+.section-light {
   background-color: #f2f2f2;
 }
 
@@ -14,25 +14,39 @@ font-dark {
   color: #666;
 }
 
-font-300 {
+font-300, h3 {
   font-weight: 300;
 }
 
-.btn-main {
+h2 {
+  color: #3f51b5
+}
+
+.btn-thin {
   padding: 0;
 
   background-color: transparent;
   border-radius: 0;
   border: none;
 
-  color: #F06292;
-  line-height: 1;
+  color: #FF4081;
 }
 
-.btn-candy:hover {
+.btn-thick {
+  background-color: #FF4081;
+  border-radius: 8px;
+  border: 1px solid #F50057;
+}
+
+.btn-thick:hover {
+  background-color: #FF80AB;
+  border: 1px solid #FF4081;
+}
+
+.btn-thin:hover {
   background-color: transparent;
-  color: #F06292;
-  border-bottom: 1px solid #F06292;
+  color: #FF4081;
+  text-decoration: underline;
 }
 
 .btn-footer {
@@ -42,13 +56,12 @@ font-300 {
 .btn-footer:hover {
   background-color: transparent;
   color: #666;
-  border-bottom: 1px solid #666;
 }
 
 /* ------------- =Masthead -------------- */
 
 .masthead {
-  background-color: #E91E63;
+  background-color: #3F51B5;
 }
 
 header a {
@@ -57,13 +70,13 @@ header a {
 }
 
 header li {
-  border-bottom: 1px solid #F06292;
+  border-bottom: 1px solid #5c6bc0;
 }
 
 header a:hover {
   transition: 200ms ease-out;
 
-  color: #F48FB1;
+  color: #9FA8DA;
 }
 
 .nav {
@@ -179,6 +192,10 @@ header a:hover {
 
 /* ------------- =Link Cards -------------- */
 
+.cards {
+  color: #3F51B5;
+}
+
 .card {
   background-image: linear-gradient(to bottom, #fafafa, #f2f2f2);
   border-top: 2px solid #fff;
@@ -198,4 +215,16 @@ header a:hover {
     border-right: 2px solid #fff;
   }
 
+}
+
+/* ------------- =Footer -------------- */
+
+.footer {
+  color: #333;
+}
+
+.form input,
+.form textarea,
+.form select {
+  border-radius: 4px;
 }
