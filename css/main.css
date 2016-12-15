@@ -10,16 +10,16 @@ body {
   background-color: #f2f2f2;
 }
 
+.brand-color {
+  color: #3f51b5
+}
+
 font-dark {
   color: #666;
 }
 
 font-300, h3 {
   font-weight: 300;
-}
-
-h2 {
-  color: #3f51b5
 }
 
 .btn-thin {
@@ -148,8 +148,6 @@ header a:hover {
   height: calc(100vh - 80px);
   max-height: 640px;
   min-height: 420px;
-
-  color: #3F51B5;
 }
 
 .banner-content-wrapper {
@@ -192,10 +190,6 @@ header a:hover {
 
 /* ------------- =Link Cards -------------- */
 
-.cards {
-  color: #3F51B5;
-}
-
 .card {
   background-image: linear-gradient(to bottom, #fafafa, #f2f2f2);
   border-top: 2px solid #fff;
@@ -221,6 +215,17 @@ header a:hover {
 
 .footer {
   color: #333;
+}
+
+.footer a {
+  padding-right: .7rem;
+  border-right: 1px solid #999;
+}
+
+.footer .footer-last {
+  padding: 0;
+
+  border: none;
 }
 
 .form input,

@@ -38,14 +38,15 @@
   </header> <!-- End .header -->
 
   <main role="main" id="main">
-      <a class="banner block text-center font-brand" href="#">
+      <a href="#" class="banner block text-center font-brand">
         <div class="banner-content-wrapper block relative">
           <div class="banner-content pin-c pad-t pad-b w-1 absolute">
             <h2 class="giga brand-color push-1-4">Lollipops made just for you.</h2>
-            <span href="#" class="btn btn-thin push-0">Learn more &gt;</span>
+            <span class="btn btn-thin push-0">Learn more &gt;</span>
           </div>
         </div>
-        <div class="banner-img"></div>
+        <div class="banner-img">
+        </div>
       </a> <!-- End .banner -->
 
       <ul class="cards font-brand grid list-group">
@@ -54,7 +55,7 @@
             <i class="icon i-64 push-1-2">
               <img src="images/icons/card-candy.svg" alt="">
             </i>
-            <div>
+            <div class="brand-color">
               <strong class="giga">Candy</strong>
               <p class="push-0">Mmm. Candy.</p>
             </div>
@@ -65,7 +66,7 @@
             <i class="icon i-64 push-1-2">
               <img src="images/icons/card-price.svg" alt="">
             </i>
-            <div>
+            <div class="brand-color">
               <strong class="giga">Prices</strong>
               <p class="push-0">Just as sweet as the candy.</p>
             </div>
@@ -76,7 +77,7 @@
             <i class="icon i-64 push-1-2">
               <img src="images/icons/card-team.svg" alt="">
             </i>
-            <div>
+            <div class="brand-color">
               <strong class="giga">The Team</strong>
               <p class="push-0">Just as sweet as the candy.</p>
             </div>
@@ -87,7 +88,7 @@
             <i class="icon i-64 push-1-2">
               <img src="images/icons/card-contact.svg" alt="">
             </i>
-            <div>
+            <div class="brand-color">
               <strong class="giga">Contact us</strong>
               <p class="push-0">Trust us. We don't bite.</p>
             </div>
@@ -97,7 +98,7 @@
 
       <section class="form pad-t-2 pad-b-2 gutter">
         <div class="max-length">
-          <h2 class="giga font-brand text-center push-2 font-300">Send us a sweet little note.</h2>
+          <h2 class="giga brand-color text-center push-2 font-300">Send us a sweet little note.</h2>
 
           <form class="push-0" method="POST" action="https://formspree.io/matthewpeixoto@gmail.com">
             <div class="push">
@@ -116,7 +117,7 @@
                 <option>I want candy!</option>
               </select>
             </div>
-            <div class="push-2">
+            <div class="push">
               <label for="details">What's up?</label>
               <textarea id="details" name="message"></textarea>
             </div>
@@ -128,16 +129,16 @@
       </section> <!-- End .form -->
   </main>
 
-  <footer class="footer section-light grid text-center island">
-    <div role="contentinfo" class="unit [ xs-1 s-1 ] push-1-2">
-      <small>Copyright © 2016 Beau’s Bonbons. All rights reserved.</small>
+  <footer role="contentinfo" class="footer section-light grid text-center island-2">
+    <div class="unit [ xs-1 s-1 ] push">
+      <small>Copyright © 2016 Beau’s Bonbons.</small>
     </div>
-    <nav class="unit [ xs-1 s-1 ]" id="nav">
+    <nav class="unit [ xs-1 s-1 ]">
       <ul class="list-group-inline push-0 milli">
-        <li><a class="ib btn btn-thin btn-footer push-r" href="#">About</a></li>
-        <li><a class="ib btn btn-thin btn-footer push-r" href="#">Candy</a></li>
-        <li><a class="ib btn btn-thin btn-footer push-r" href="#">Prices</a></li>
-        <li><a class="ib btn btn-thin btn-footer push-r" href="#">Contact</a></li>
+        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">About</a></li>
+        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">Candy</a></li>
+        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">Prices</a></li>
+        <li><a class="ib btn btn-thin btn-footer footer-last" href="#">Contact</a></li>
       </ul>
     </nav>
   </footer>
