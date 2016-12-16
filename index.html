@@ -57,7 +57,7 @@
         <a href="#candy" class="card s-card-border-right pad-t pad-b text-center link-box">
           <i class="icon icon-candy i-64 push-1-2">
           </i>
-          <div class="font-dark">
+          <div>
             <strong>Candy</strong>
             <p class="font-300 push-0">Mmm. Candy.</p>
           </div>
@@ -67,7 +67,7 @@
         <a href="#" class="card m-card-border-right pad-t pad-b text-center link-box">
           <i class="icon icon-price i-64 push-1-2">
           </i>
-          <div class="font-dark">
+          <div>
             <strong>Prices</strong>
             <p class="font-300 push-0">Just as sweet as the candy.</p>
           </div>
@@ -77,7 +77,7 @@
         <a href="#" class="card s-card-border-right card-border pad-t pad-b text-center link-box">
           <i class="icon icon-team i-64 push-1-2">
           </i>
-          <div class="font-dark">
+          <div>
             <strong>The Team</strong>
             <p class="font-300 push-0">Meet the three mustateers.</p>
           </div>
@@ -87,7 +87,7 @@
         <a href="#contact" class="card pad-t pad-b text-center link-box">
           <i class="icon icon-contact i-64 push-1-2">
           </i>
-          <div class="font-dark">
+          <div>
             <strong>Contact us</strong>
             <p class="font-300 push-0">We don't bite.</p>
           </div>
@@ -97,26 +97,27 @@
 
     <!-- Candy -->
     <section class="candy pad-b-2" id="candy">
+      <!-- Candy Intro-->
       <div class="candy-intro block text-center">
         <div class="candy-content-wrapper block relative">
           <div class="candy-content max-length gutter pin-c absolute">
             <h2 class="font-300 push-1-4">Candy!</h2>
-            <p>From lollipops to gummi bears, we've got just the thing you're craving. </p>
+            <p class="max-length gutter-2">From lollipops to gummi bears, we've got just the thing you're craving. </p>
           </div>
         </div>
         <div class="candy-img candy-img-bear">
         </div>
       </div>
-
+      <!-- Lollipop -->
       <div class="candy-wrapper grid">
         <div class="unit [ xs-1 s-1 ]">
-          <div class="candy-desc candy-desc-grey candy-desc-change grid font-dark" id="lollipop">
+          <div class="candy-desc candy-desc-grey candy-desc-change grid" id="lollipop">
             <div class="candy-content-wrapper candy-content-wrapper-lollipop unit unit-push-s-1-2 [ xs-1 s-1-2 ] relative text-center">
               <div class="candy-content w-1 absolute pin-c">
                 <i class="icon icon-lollipop i-64 push">
                 </i>
                 <h3 class="font-300 push-1-2">One-of-a-kind lollipops.</h3>
-                <p class="gutter max-length">We'll make a custom lollipop just the way you like it. Choose your color, flavour, toppings, size, and awesomeness.</p>
+                <p class="max-length gutter-2">We'll make a custom lollipop just the way you like it. Choose the flavour, colour, toppings and level of awesomeness.</p>
                 <a href="#" class="btn btn-thin" aria-label="Place order for One-of-a-kind lollipop">Place order &gt;</a>
               </div>
             </div>
@@ -128,13 +129,13 @@
         </div>
 
         <div class="unit [ xs-1 s-1-2 ]">
-          <div class="candy-desc candy-desc-white section-light font-dark">
+          <div class="candy-desc candy-desc-white section-light">
             <div class="candy-content-wrapper relative text-center">
               <div class="candy-content w-1 absolute pin-c">
                 <i class="icon icon-lollipop i-64 push">
                 </i>
                 <h3 class="font-300 push-1-2">Placeholder text.</h3>
-                <p>The photo below is also a placeholder</p>
+                <p class="max-length gutter-2">The photo below is also a placeholder</p>
                 <a href="#" class="btn btn-thin">Place order &gt;</a>
               </div>
             </div>
@@ -146,13 +147,13 @@
         </div>
 
         <div class="unit [ xs-1 s-1-2 ]">
-          <div class="candy-desc candy-desc-grey font-dark">
+          <div class="candy-desc candy-desc-grey">
             <div class="candy-content-wrapper relative text-center">
               <div class="candy-content w-1 absolute pin-c">
                 <i class="icon icon-lollipop i-64 push">
                 </i>
                 <h3 class="font-300 push-1-2">Placeholder text.</h3>
-                <p>We'll make a custom lollipop<br>just the way you like it.</p>
+                <p class="max-length gutter-2">We'll make a custom lollipop<br>just the way you like it.</p>
                 <a href="#" class="btn btn-thin">Place order &gt;</a>
               </div>
             </div>
@@ -203,7 +204,7 @@
       <!-- Form -->
       <div class="form">
         <div class="max-length">
-          <strong class="brand-color font-300 push">Send us a sweet little note.</strong>
+          <h3 class="brand-color font-300 push-1-2">Send us a sweet little note.</h3>
 
           <form class="push-0 milli" method="POST" action="https://formspree.io/matthewpeixoto@gmail.com">
             <div class="push">
@@ -212,21 +213,26 @@
             </div>
             <div class="push">
               <label for="email">Email</label>
-              <input class="island-1-2 milli" id="email" type="email" placeholder="name@example.com" name="email">
+              <input class="milli" id="email" type="email" placeholder="name@example.com" name="email">
+            </div>
+            <div class="push">
+              <label for="question">Do you like candy?</label>
+              <select id="question" name="question">
+                <option>Yes</option>
+              </select>
             </div>
             <div class="push">
               <label for="subject">Subject</label>
-              <select id="subject" name="_subject">
+              <select id="subject" name="subject">
                 <option>General question</option>
-                <option>General question</option>
-                <option>I want candy!</option>
+                <option>Where's my candy?</option>
               </select>
             </div>
             <div class="push">
               <label for="details">What's up?</label>
               <textarea id="details" name="message"></textarea>
             </div>
-            <div class="text-center">
+            <div>
               <button class="btn btn-full" type="submit">Send message</button>
             </div>
           </form>

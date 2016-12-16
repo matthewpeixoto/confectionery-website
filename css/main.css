@@ -1,5 +1,6 @@
 html {
   font-family: Roboto, sans-serif;
+  color: #333;
 }
 
 body {
@@ -16,10 +17,6 @@ body {
 
 .font-medium {
   color: #666;
-}
-
-.font-dark {
-  color: #333;
 }
 
 .font-300 {
@@ -183,7 +180,7 @@ header li {
     height: 30%;
   }
 
-.candy-img-banner {
+  .candy-img-banner {
     height: 70%;
   }
 
