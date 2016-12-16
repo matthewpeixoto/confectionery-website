@@ -19,6 +19,10 @@ body {
   color: #666;
 }
 
+.font-dark {
+  color: #333;
+}
+
 .font-300 {
   font-weight: 300;
 }
@@ -263,6 +267,7 @@ header li {
 
 .candy-intro {
   height: 100vh;
+  max-height: 960px;
 
   background-color: #1a1e81;
 
@@ -277,10 +282,30 @@ header li {
   background-position: -256px 0;
 }
 
-.candy-img-lollipop,
-.candy-img-placehold-grey,
-.candy-img-placehold {
+.icon-tootsie {
+  background-position: -320px 0;
+}
+
+.icon-dino {
+  background-position: -384px 0;
+}
+
+.icon-dino {
+
+}
+
+.icon-tootsie {}
+
+.candy-img-lollipop {
   background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 202% no-repeat;
+}
+
+.candy-img-tootsie {
+  background: url("../images/photos/tootsie.jpg") center top / auto 100% no-repeat;
+}
+
+.candy-img-dino {
+  background: url("../images/photos/dino.jpg") center top / auto 100% no-repeat;
 }
 
 .candy-img-placehold-grey,
