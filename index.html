@@ -28,9 +28,9 @@
       <label class="nav-label ir label-block absolute pin-tl" for="nav-check">Navigate</label>
       <nav role="navigation" class="nav" id="nav">
         <ul class="list-group push-0">
-          <li><a class="link-box island" href="#about">About</a></li>
           <li><a class="link-box island" href="#candy">Candy</a></li>
           <li><a class="link-box island" href="#prices">Prices</a></li>
+          <li><a class="link-box island" href="#team">The Team</a></li>
           <li><a class="link-box island" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -38,7 +38,6 @@
   </header>
 
   <main role="main" id="main">
-
     <!-- Banner -->
     <a href="#lollipop" class="banner block text-center font-brand">
       <div class="banner-content-wrapper block relative">
@@ -50,7 +49,6 @@
       <div class="candy-img-banner">
       </div>
     </a>
-
     <!-- Cards -->
     <ul class="cards grid list-group">
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
@@ -101,11 +99,13 @@
       <div class="candy-intro block text-center">
         <div class="candy-content-wrapper block relative">
           <div class="candy-content max-length gutter pin-c absolute">
-            <h2 class="font-300 push-1-4">Candy!</h2>
-            <p class="max-length gutter-2">From lollipops to gummi bears, we've got just the thing you're craving. </p>
+            <h2 class="font-300 push-1-2">Candy!</h2>
+            <p class="max-length gutter-2">From lollipops to gummi bears, we've got just the thing in store for your sweet tooth.</p>
           </div>
         </div>
-        <div class="candy-img candy-img-bear">
+        <div class="candy-img-wrapper">
+          <div class="candy-img candy-img-bear">
+          </div>
         </div>
       </div>
       <!-- Lollipop -->
@@ -127,7 +127,7 @@
             </div>
           </div>
         </div>
-
+        <!-- Tootsie -->
         <div class="unit [ xs-1 s-1-2 ]">
           <div class="candy-desc candy-desc-white section-light">
             <div class="candy-content-wrapper relative text-center">
@@ -145,7 +145,7 @@
             </div>
           </div>
         </div>
-
+        <!-- Dino -->
         <div class="unit [ xs-1 s-1-2 ]">
           <div class="candy-desc candy-desc-grey">
             <div class="candy-content-wrapper relative text-center">
@@ -164,12 +164,53 @@
           </div>
         </div>
       </div>
-      <!-- End grid -->
+    </section>
+
+    <section class="prices pad-t pad-b" id="prices">
+      <div class="wrapper gutter">
+        <h2 class="brand-color font-300 push-1-2 text-center">Prices!</h2>
+        <p class="max-length text-center">At Beau's Bonbons we charge by the pound!</p>
+
+        <table>
+          <caption class="micro font-medium">Prices for candy based on weight.</caption>
+
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">5lbs</th>
+              <th scope="col">10lbs</th>
+              <th scope="col">15lbs</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Lollipops</th>
+              <td>$10</td>
+              <td>$20</td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <th scope="row">Tootsie rolls</th>
+              <td>$40</td>
+              <td>$70</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <th scope="row">Dino eggs</th>
+              <td>$50</td>
+              <td>$70</td>
+              <td>$90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- Contact Us -->
     <section class="contact pad-t-2 pad-b-2 gutter" id="contact">
-      <h2 class="brand-color font-300 text-center push-2">Contact us!</h2>
+      <h2 class="brand-color font-300 text-center push-1-2">Contact us!</h2>
+      <p class="max-length text-center">Trust us, we don't bite.</p>
 
       <div class="store-location push-2">
         <div class="grid wrapper section-light">
@@ -248,10 +289,10 @@
     </div>
     <nav class="unit [ xs-1 s-1 ]">
       <ul class="list-group-inline push-0 milli">
-        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">About</a></li>
-        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">Candy</a></li>
-        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">Prices</a></li>
-        <li><a class="ib btn btn-thin btn-footer footer-last" href="#">Contact</a></li>
+        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#candy">Candy</a></li>
+        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#prices">Prices</a></li>
+        <li><a class="ib btn btn-thin btn-footer push-r-1-2" href="#">The Team</a></li>
+        <li><a class="ib btn btn-thin btn-footer footer-last" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </footer>
