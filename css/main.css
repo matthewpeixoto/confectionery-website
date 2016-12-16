@@ -115,12 +115,12 @@ header li {
   background-position: 0 -104px;
 }
 
-.nav-check:checked:hover ~ .nav-label {
-  background-position: 0 -156px;
-}
-
 .nav-check:focus ~ .nav-label {
   outline: 2px solid #ff80ab;
+}
+
+.nav-check:checked:hover ~ .nav-label {
+  background-position: 0 -156px;
 }
 
 @media only screen and (min-width: 46em) {
@@ -201,6 +201,26 @@ header li {
   border-top: 2px solid #fff;
 }
 
+.icon {
+  background: url("../images/icons/card-sprite.svg") top left / auto 64px no-repeat;
+}
+
+.icon-candy {
+  background-position: 0 0;
+}
+
+.icon-price {
+  background-position: -64px 0;
+}
+
+.icon-team {
+  background-position: -128px 0;
+}
+
+.icon-contact {
+  background-position: -192px 0;
+}
+
 @media only screen and (min-width: 46em) {
 
   .card-border-s {
@@ -242,24 +262,21 @@ header li {
 }
 
 .candy-intro {
-  height: 80vh;
+  height: 100vh;
 
   background-color: #1a1e81;
 
   color: #fff;
 }
 
-.candy-img-intro {
+.candy-img-bear {
   background: url("../images/photos/gummi-bears.jpg") center top / cover no-repeat;
 }
 
-.candy-img-placehold {
-  background: url("../images/photos/lollipop-white.jpg") center bottom / auto 100% no-repeat;
-}
-
 .candy-img-lollipop,
-.candy-img-placehold-grey {
-    background: url("../images/photos/lollipop-grey.jpg") center bottom / auto 100% no-repeat;
+.candy-img-placehold-grey,
+.candy-img-placehold {
+  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 200% no-repeat;
 }
 
 @media only screen and (min-width: 46em) {
@@ -278,7 +295,7 @@ header li {
 
   .candy-img-lollipop {
     height: 100%;
-    background: url("../images/photos/lollipop-white.jpg") right bottom / auto 80% no-repeat;
+    background-position: top right;
   }
 
 }
@@ -290,7 +307,6 @@ header li {
   }
 
 }
-
 
 /* ------------- =Contact us -------------- */
 
