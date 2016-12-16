@@ -7,20 +7,16 @@ body {
   min-width: 320px;
 }
 
+.section-white {
+  background-color: #fff
+}
+
 .section-light {
   background-color: #f2f2f2;
 }
 
 .brand-color {
   color: #3f51b5;
-}
-
-.font-medium {
-  color: #666;
-}
-
-.font-dark {
-  color: #333;
 }
 
 .font-300 {
@@ -63,7 +59,7 @@ body {
   color: #666;
 }
 
-/* ------------- =Masthead -------------- */
+/* ------------- =Header -------------- */
 
 .masthead {
   background-color: #3f51b5;
@@ -101,7 +97,7 @@ header li {
   height: 52px;
   width: 52px;
 
-  background: url("../images/icons/nav-icon.svg") 0 0 / 52px auto;
+  background: url("../images/icons/nav-sprite.svg") 0 0 / 52px auto;
 }
 
 .nav-check:hover ~ .nav-label {
@@ -155,11 +151,11 @@ header li {
   min-height: 420px;
 }
 
-.banner-content-wrapper {
+.banner-content {
   height: 40%;
 }
 
-.candy-img-banner {
+.banner-img {
   height: 60%;
   background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 202% no-repeat;
 }
@@ -180,11 +176,11 @@ header li {
     min-height: 540px;
   }
 
-  .banner-content-wrapper {
+  .banner-content {
     height: 30%;
   }
 
-  .candy-img-banner {
+  .banner-img {
     height: 70%;
   }
 
@@ -225,7 +221,7 @@ header li {
 
 @media only screen and (min-width: 46em) {
 
-  .s-card-border-right {
+  .s-border-right {
     border-right: 2px solid #fff;
   }
 
@@ -233,47 +229,58 @@ header li {
 
 @media only screen and (min-width: 67em) {
 
-  .m-card-border-right {
+  .m-border-right {
     border-right: 2px solid #fff;
   }
 
 }
 
-/* ------------- =Section Candy -------------- */
+/* ------------- =Candy -------------- */
 
-.candy-desc {
+.candy-intro {
+  height: 100vh;
+
+  background-color: #1a1e81;
+
+  color: #fff;
+}
+
+.candy {
   height: 520px;
 }
 
-.candy-desc-white {
-  background-color: #fff;
-}
-
-.candy-desc-grey {
-  background-color: #f2f2f2;
-}
-
-.candy-content-wrapper,
-.candy-content-wrapper-intro {
+.candy-content {
   height: 65%;
 }
 
-.candy-img-wrapper,
-.candy-img-intro {
+.candy-img-wrapper {
   height: 35%;
 }
 
 .candy-img {
   height: 100%;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
-.candy-intro {
-  height: 100vh;
-  max-height: 960px;
+.candy-img-bear {
+  background-image: url("../images/photos/bear.jpg");
+  background-size: cover;
+}
 
-  background-color: #1a1e81;
+.candy-img-lollipop {
+  background-image: url("../images/photos/lollipop-sprite.jpg");
+  background-size: auto 202%;
+}
 
-  color: #fff;
+.candy-img-tootsie {
+  background-image: url("../images/photos/tootsie.jpg");
+}
+
+.candy-img-dino {
+  background-image: url("../images/photos/dino.jpg");
 }
 
 .icon-lollipop {
@@ -288,42 +295,25 @@ header li {
   background-position: -384px 0;
 }
 
-.candy-img-bear {
-  background: url("../images/photos/gummi-bears.jpg") center top / cover no-repeat;
-}
-
-.candy-img-lollipop {
-  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 202% no-repeat;
-}
-
-.candy-img-tootsie {
-  background: url("../images/photos/tootsie.jpg") center top / auto 100% no-repeat;
-}
-
-.candy-img-dino {
-  background: url("../images/photos/dino.jpg") center top / auto 100% no-repeat;
-}
-
-.candy-img-placehold-grey,
-.candy-img-lollipop {
-  background-position: center top;
-}
-
 @media only screen and (min-width: 46em) {
 
-  .candy-desc {
+  .candy-img-bear {
+    background: url("../images/photos/bear.jpg") center top / cover no-repeat;
+  }
+
+  .candy {
     height: 545px;
   }
 
-  .candy-desc-change {
+  .section-adapt {
     background-color: #fff;
   }
 
-  .candy-content-wrapper-lollipop {
+  .candy-content-lollipop {
     height: 100%;
   }
 
-  .lollipop-img-wrapper {
+  .candy-img-wrapper-lollipop {
     height: 100%;
   }
 
@@ -337,7 +327,7 @@ header li {
 
 @media only screen and (min-width: 67em) {
 
-  .candy-desc {
+  .candy {
     height: 615px;
   }
 
@@ -353,15 +343,11 @@ header li {
 
 }
 
-.store-details dt {
-  width: 5em;
+  .store-details dt {
+    width: 5em;
 }
 
 /* ------------- =Footer -------------- */
-
-.footer {
-  color: #333;
-}
 
 .footer a {
   padding-right: .7rem;
