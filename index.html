@@ -28,10 +28,10 @@
       <label class="nav-label ir label-block absolute pin-tl" for="nav-check">Navigate</label>
       <nav role="navigation" class="nav" id="nav">
         <ul class="list-group push-0">
-          <li><a class="link-box island" href="#">About</a></li>
-          <li><a class="link-box island" href="#">Candy</a></li>
-          <li><a class="link-box island" href="#">Prices</a></li>
-          <li><a class="link-box island" href="#">Contact</a></li>
+          <li><a class="link-box island" href="#about">About</a></li>
+          <li><a class="link-box island" href="#candy">Candy</a></li>
+          <li><a class="link-box island" href="#prices">Prices</a></li>
+          <li><a class="link-box island" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -43,7 +43,7 @@
     <a href="#" class="banner block text-center font-brand">
       <div class="banner-content-wrapper block relative">
         <div class="banner-content pin-c pad-t pad-b w-1 absolute">
-          <h2 class="giga brand-color push-1-4">Lollipops made just for you.</h2>
+          <h2 class="brand-color push-1-4">Lollipops made just for you.</h2>
           <span class="btn btn-thin push-0">Learn more &gt;</span>
         </div>
       </div>
@@ -54,7 +54,7 @@
     <!-- Cards -->
     <ul class="cards font-brand grid list-group">
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-        <a href="#" class="card card-border-s island block text-center link-box">
+        <a href="#candy" class="card card-border-s island block text-center link-box">
           <i class="icon i-64 push-1-2">
             <img src="images/icons/card-candy.svg" alt="">
           </i>
@@ -87,7 +87,7 @@
         </a>
       </li>
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-        <a href="#" class="card island block text-center link-box">
+        <a href="#contact" class="card island block text-center link-box">
           <i class="icon i-64 push-1-2">
             <img src="images/icons/card-contact.svg" alt="">
           </i>
@@ -99,12 +99,41 @@
       </li>
     </ul>
 
-    <!-- Contact Us -->
+    <!-- Candy -->
 
-    <section class="contact pad-t-2 gutter" id="contact">
+    <section class="candy pad-b-2" id="candy">
+      <div class="candy-intro block text-center">
+        <div class="candy-intro-wrapper block relative">
+          <div class="candy-intro-content gutter max-length pin-c pad-t pad-b w-1 absolute">
+            <h2 class="push-1-4">Candy!</h2>
+            <p>From lollipops to gummi bears, we've got just the thing you need.</p>
+          </div>
+        </div>
+        <figure class="candy-intro-img">
+        </figure>
+      </div>
+
+      <div class="lollipop grid section-light">
+        <div class="candy-content-wrapper unit unit-push-s-1-2 [ xs-1 s-1-2 ] text-center absolute">
+          <div class="candy-content gutter pad-t pad-b relative pin-c">
+            <i class="icon i-64 push">
+              <img src="images/icons/card-candy.svg" alt="">
+            </i>
+            <h3 class="font-300">Lollipops made just for you.</h3>
+            <p>We'll make a perfect, one-of-a-kind lollipop just for you.</p>
+          </div>
+        </div>
+        <figure class="lollipop-img unit unit-pull-s-1-2 [ xs-1 s-1-2 ] push-0">
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- Contact Us -->
+    <section class="contact pad-t-2 pad-b-2 gutter" id="contact">
       <h2 class="brand-color text-center push-2">Contact us</h2>
 
-      <div class="store-location">
+      <div class="store-location push-2">
         <div class="grid wrapper section-light">
           <div class="store-image unit unit-push-m-2-5 [ xs-1 s-1 m-3-5 ]">
             <div class="embed embed-3by2">
@@ -131,21 +160,22 @@
                   <dd class="micro text-right right push-0">11:00 a.m. to 6:00 p.m.</dd>
                 </dl>
               </div>
+            </div>
           </div>
         </div>
       </div>
 
-    <!-- Contact form -->
-      <div class="form pad-b-2 pad-t-2">
+    <!-- Form -->
+      <div class="form">
         <div class="max-length">
-          <h2 class="giga brand-color text-center push">Send us a sweet little note.</h2>
+          <h3 class="brand-color text-center push">Send us a sweet little note.</h3>
 
           <form class="push-0" method="POST" action="https://formspree.io/matthewpeixoto@gmail.com">
             <div class="push">
               <label for="name">Name</label>
-              <input class="island-1-2 milli" id="name" placeholder="name" name="name">
+              <input class="island-1-2 milli" id="name" name="name">
             </div>
-            <div class="push-2">
+            <div class="push">
               <label for="email">Email</label>
               <input class="island-1-2 milli" id="email" type="email" placeholder="name@example.com" name="email">
             </div>

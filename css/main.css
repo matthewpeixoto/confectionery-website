@@ -213,6 +213,58 @@ header li {
 
 }
 
+/* ------------- =Candy -------------- */
+
+.candy-intro {
+  height: 80vh;
+}
+
+.candy-intro {
+  color: #fff;
+}
+
+.candy-intro-wrapper {
+  height: 30%;
+
+  background-color: #1a1e81;
+}
+
+.candy-intro-img {
+  height: 70%;
+  background: url("../images/photos/gummi-bears.jpg") center top / cover no-repeat;
+}
+
+.candy-content-wrapper {
+  height: 60%;
+}
+
+.lollipop {
+  height: 500px;
+}
+
+.lollipop-img {
+  height: 40%;
+  background: url("../images/photos/lollipop-grey.jpg") center bottom / auto 90% no-repeat;
+
+}
+
+@media only screen and (min-width: 46em) {
+
+  .lollipop {
+    background-color: #fff;
+  }
+
+  .lollipop-img,
+   .candy-content-wrapper {
+    height: 100%;
+  }
+
+  .lollipop-img {
+    background: url("../images/photos/lollipop-white.jpg") right bottom / auto 90% no-repeat;
+  }
+}
+
+
 /* ------------- =Contact us -------------- */
 
 @media only screen and (min-width: 67em) {
