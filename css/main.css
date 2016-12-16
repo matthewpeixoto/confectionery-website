@@ -160,7 +160,7 @@ header li {
 
 .candy-img-banner {
   height: 60%;
-  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 200% no-repeat;
+  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 202% no-repeat;
 }
 
 @media only screen and (min-width: 46em) {
@@ -283,9 +283,10 @@ header li {
 .candy-img-lollipop,
 .candy-img-placehold-grey,
 .candy-img-placehold {
-  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 201% no-repeat;
+  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 202% no-repeat;
 }
 
+.candy-img-placehold-grey,
 .candy-img-lollipop {
   background-position: center top;
 }
@@ -310,6 +311,7 @@ header li {
 
   .candy-img-lollipop {
     height: 90%;
+    margin-top: 15%;
     background-position: bottom right;
   }
 
