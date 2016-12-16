@@ -14,11 +14,11 @@ body {
   color: #3f51b5
 }
 
-font-dark {
+.font-dark {
   color: #666;
 }
 
-font-300, h3 {
+.font-300 {
   font-weight: 300;
 }
 
@@ -29,23 +29,23 @@ font-300, h3 {
   border-radius: 0;
   border: none;
 
-  color: #FF4081;
+  color: #ff4081;
 }
 
-.btn-thick {
-  background-color: #FF4081;
+.btn-full {
+  background-color: #ff4081;
   border-radius: 8px;
-  border: 1px solid #F50057;
+  border: 1px solid #f50057;
 }
 
-.btn-thick:hover {
-  background-color: #FF80AB;
-  border: 1px solid #FF4081;
+.btn-full:hover {
+  background-color: #ff80ab;
+  border: 1px solid #ff4081;
 }
 
 .btn-thin:hover {
   background-color: transparent;
-  color: #FF4081;
+  color: #ff4081;
   text-decoration: underline;
 }
 
@@ -61,22 +61,23 @@ font-300, h3 {
 /* ------------- =Masthead -------------- */
 
 .masthead {
-  background-color: #3F51B5;
+  background-color: #3f51b5;
 }
 
 header a {
-  color: #fff;
   cursor: pointer;
-}
 
-header li {
-  border-bottom: 1px solid #5c6bc0;
+  color: #fff;
 }
 
 header a:hover {
   transition: 200ms ease-out;
 
-  color: #9FA8DA;
+  color: #9fa8da;
+}
+
+header li {
+  border-bottom: 1px solid #5c6bc0;
 }
 
 .nav {
@@ -88,7 +89,6 @@ header a:hover {
 }
 
 .nav-check {
-  position: absolute;
   top: -3em;
 }
 
@@ -113,6 +113,10 @@ header a:hover {
 
 .nav-check:checked:hover ~ .nav-label {
   background-position: 0 -156px;
+}
+
+.nav-check:focus ~ .nav-label {
+  outline: 2px solid #ff80ab;
 }
 
 @media only screen and (min-width: 46em) {
@@ -157,8 +161,6 @@ header a:hover {
 .banner-img {
   height: 60%;
   background: url("../images/photos/banner-img.jpg") center top / auto 100% no-repeat;
-}
-
 }
 
 @media only screen and (min-width: 46em) {
@@ -209,6 +211,20 @@ header a:hover {
     border-right: 2px solid #fff;
   }
 
+}
+
+/* ------------- =Contact us -------------- */
+
+@media only screen and (min-width: 67em) {
+
+  .store-details {
+    padding: 1.4rem;
+  }
+
+}
+
+.store-details dt {
+  width: 5em;
 }
 
 /* ------------- =Footer -------------- */

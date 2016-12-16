@@ -24,7 +24,7 @@
       </a>
     </div>
     <div class="nav-wrapper unit [ xs-1 s-2-3 m-2-3 l-2-3 ]">
-      <input type="checkbox" class="nav-check" id="nav-check">
+      <input type="checkbox" class="nav-check absolute" id="nav-check">
       <label class="nav-label ir label-block absolute pin-tl" for="nav-check">Navigate</label>
       <nav role="navigation" class="nav" id="nav">
         <ul class="list-group push-0">
@@ -35,70 +35,110 @@
         </ul>
       </nav>
     </div>
-  </header> <!-- End .header -->
+  </header>
 
   <main role="main" id="main">
-      <a href="#" class="banner block text-center font-brand">
-        <div class="banner-content-wrapper block relative">
-          <div class="banner-content pin-c pad-t pad-b w-1 absolute">
-            <h2 class="giga brand-color push-1-4">Lollipops made just for you.</h2>
-            <span class="btn btn-thin push-0">Learn more &gt;</span>
+
+    <!-- Banner -->
+    <a href="#" class="banner block text-center font-brand">
+      <div class="banner-content-wrapper block relative">
+        <div class="banner-content pin-c pad-t pad-b w-1 absolute">
+          <h2 class="giga brand-color push-1-4">Lollipops made just for you.</h2>
+          <span class="btn btn-thin push-0">Learn more &gt;</span>
+        </div>
+      </div>
+      <div class="banner-img">
+      </div>
+    </a>
+
+    <!-- Cards -->
+    <ul class="cards font-brand grid list-group">
+      <li class="unit [ xs-1 s-1-2 m-1-4 ]">
+        <a href="#" class="card card-border-s island block text-center link-box">
+          <i class="icon i-64 push-1-2">
+            <img src="images/icons/card-candy.svg" alt="">
+          </i>
+          <div class="brand-color">
+            <strong class="giga">Candy</strong>
+            <p class="milli font-300 push-0">Mmm. Candy.</p>
+          </div>
+        </a>
+      </li>
+      <li class="unit [ xs-1 s-1-2 m-1-4 ]">
+        <a href="#" class="card card-border-l island block text-center link-box">
+          <i class="icon i-64 push-1-2">
+            <img src="images/icons/card-price.svg" alt="">
+          </i>
+          <div class="brand-color">
+            <strong class="giga">Prices</strong>
+            <p class="milli font-300 push-0">Just as sweet as the candy.</p>
+          </div>
+        </a>
+      </li>
+      <li class="unit [ xs-1 s-1-2 m-1-4 ]">
+        <a href="#" class="card card-border-s card-border island block text-center link-box">
+          <i class="icon i-64 push-1-2">
+            <img src="images/icons/card-team.svg" alt="">
+          </i>
+          <div class="brand-color">
+            <strong class="giga">The Team</strong>
+            <p class="milli font-300 push-0">Just as sweet as the candy.</p>
+          </div>
+        </a>
+      </li>
+      <li class="unit [ xs-1 s-1-2 m-1-4 ]">
+        <a href="#" class="card island block text-center link-box">
+          <i class="icon i-64 push-1-2">
+            <img src="images/icons/card-contact.svg" alt="">
+          </i>
+          <div class="brand-color">
+            <strong class="giga">Contact us</strong>
+            <p class="milli font-300 push-0">Trust us. We don't bite.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Contact Us -->
+
+    <section class="contact pad-t-2 gutter" id="contact">
+      <h2 class="brand-color text-center push-2">Contact us</h2>
+
+      <div class="store-location">
+        <div class="grid wrapper section-light">
+          <div class="store-image unit unit-push-m-2-5 [ xs-1 s-1 m-3-5 ]">
+            <div class="embed embed-3by2">
+              <img class="embed-item" src="images/photos/store.jpg" alt="Photo of the outside of our store.">
+            </div>
+          </div>
+          <div class="store-details unit unit-pull-m-3-5 [ xs-1 s-1 m-2-5 ] gutter pad-t-2 pad-b-2">
+            <div class="grid">
+              <div class="unit milli [ xs-1 s-1-2 m-1 ] push">
+                <strong class="block push-1-4">Address:</strong>
+                <div class="push-1-8">123 Candy Street</div>
+                <div class="push-1-8">North Pole, Santa's Village</div>
+                <div class="push-1-4">(123) 4567-8911</div>
+                <a href="https://goo.gl/JfLbKs" class="btn btn-thin">View on map &gt;</a>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-1 ]">
+                <strong class="block push-1-4 milli">Store hours:</strong>
+                <dl class="list-group-inline">
+                  <dt class="micro">Mon - Fri:</dt>
+                  <dd class="micro text-right right push-0">9:30 a.m. to 9:00 p.m.</dd>
+                  <dt class="micro">Sat:</dt>
+                  <dd class="micro text-right right push-0">9:30 a.m. to 7:00 p.m.</dd>
+                  <dt class="micro">Sun:</dt>
+                  <dd class="micro text-right right push-0">11:00 a.m. to 6:00 p.m.</dd>
+                </dl>
+              </div>
           </div>
         </div>
-        <div class="banner-img">
-        </div>
-      </a> <!-- End .banner -->
+      </div>
 
-      <ul class="cards font-brand grid list-group">
-        <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-          <a href="#" class="card card-border-s island-1-2 block text-center link-box">
-            <i class="icon i-64 push-1-2">
-              <img src="images/icons/card-candy.svg" alt="">
-            </i>
-            <div class="brand-color">
-              <strong class="giga">Candy</strong>
-              <p class="push-0">Mmm. Candy.</p>
-            </div>
-          </a>
-        </li>
-        <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-          <a href="#" class="card card-border-l island-1-2 block text-center link-box">
-            <i class="icon i-64 push-1-2">
-              <img src="images/icons/card-price.svg" alt="">
-            </i>
-            <div class="brand-color">
-              <strong class="giga">Prices</strong>
-              <p class="push-0">Just as sweet as the candy.</p>
-            </div>
-          </a>
-        </li>
-        <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-          <a href="#" class="card card-border-s card-border island-1-2 block text-center link-box">
-            <i class="icon i-64 push-1-2">
-              <img src="images/icons/card-team.svg" alt="">
-            </i>
-            <div class="brand-color">
-              <strong class="giga">The Team</strong>
-              <p class="push-0">Just as sweet as the candy.</p>
-            </div>
-          </a>
-        </li>
-        <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-          <a href="#" class="card island-1-2 block text-center link-box">
-            <i class="icon i-64 push-1-2">
-              <img src="images/icons/card-contact.svg" alt="">
-            </i>
-            <div class="brand-color">
-              <strong class="giga">Contact us</strong>
-              <p class="push-0">Trust us. We don't bite.</p>
-            </div>
-          </a>
-        </li>
-      </ul> <!-- End .cards -->
-
-      <section class="form pad-t-2 pad-b-2 gutter">
+    <!-- Contact form -->
+      <div class="form pad-b-2 pad-t-2">
         <div class="max-length">
-          <h2 class="giga brand-color text-center push-2 font-300">Send us a sweet little note.</h2>
+          <h2 class="giga brand-color text-center push">Send us a sweet little note.</h2>
 
           <form class="push-0" method="POST" action="https://formspree.io/matthewpeixoto@gmail.com">
             <div class="push">
@@ -122,11 +162,13 @@
               <textarea id="details" name="message"></textarea>
             </div>
             <div class="text-center">
-              <button class="btn btn-thick" type="submit">Send message</button>
+              <button class="btn btn-full" type="submit">Send message</button>
             </div>
           </form>
         </div>
-      </section> <!-- End .form -->
+      </div>
+    </section>
+
   </main>
 
   <footer role="contentinfo" class="footer section-light grid text-center island-2">
