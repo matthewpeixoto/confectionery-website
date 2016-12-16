@@ -47,14 +47,14 @@
           <span class="btn btn-thin push-0">Learn more &gt;</span>
         </div>
       </div>
-      <div class="banner-img">
+      <div class="candy-img-banner">
       </div>
     </a>
 
     <!-- Cards -->
     <ul class="cards grid list-group">
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-        <a href="#candy" class="card card-border-s pad-t pad-b text-center link-box">
+        <a href="#candy" class="card s-card-border-right pad-t pad-b text-center link-box">
           <i class="icon icon-candy i-64 push-1-2">
           </i>
           <div class="font-dark">
@@ -64,7 +64,7 @@
         </a>
       </li>
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-        <a href="#" class="card card-border-l pad-t pad-b text-center link-box">
+        <a href="#" class="card m-card-border-right pad-t pad-b text-center link-box">
           <i class="icon icon-price i-64 push-1-2">
           </i>
           <div class="font-dark">
@@ -74,7 +74,7 @@
         </a>
       </li>
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-        <a href="#" class="card card-border-s card-border pad-t pad-b text-center link-box">
+        <a href="#" class="card s-card-border-right card-border pad-t pad-b text-center link-box">
           <i class="icon icon-team i-64 push-1-2">
           </i>
           <div class="font-dark">
@@ -98,7 +98,7 @@
     <!-- Candy -->
     <section class="candy pad-b-2" id="candy">
       <div class="candy-intro block text-center">
-        <div class="candy-content-wrapper  block relative">
+        <div class="candy-content-wrapper block relative">
           <div class="candy-content max-length gutter pin-c absolute">
             <h2 class="font-300 push-1-4">Candy!</h2>
             <p>From lollipops to gummi bears, we've got just the thing you're craving. </p>
@@ -113,15 +113,16 @@
           <div class="candy-desc candy-desc-grey candy-desc-change grid font-dark" id="lollipop">
             <div class="candy-content-wrapper candy-content-wrapper-lollipop unit unit-push-s-1-2 [ xs-1 s-1-2 ] relative text-center">
               <div class="candy-content w-1 absolute pin-c">
-                <i class="icon i-64 push">
-                  <img src="images/icons/icon-lollipop.svg" alt="">
+                <i class="icon icon-lollipop i-64 push">
                 </i>
                 <h3 class="font-300 push-1-2">One-of-a-kind lollipops.</h3>
                 <p class="gutter max-length">We'll make a custom lollipop just the way you like it. Choose your color, flavour, toppings, size, and awesomeness.</p>
                 <a href="#" class="btn btn-thin" aria-label="Place order for One-of-a-kind lollipop">Place order &gt;</a>
               </div>
             </div>
-            <div class="candy-img candy-img-lollipop unit unit-pull-s-1-2 [ xs-1 s-1-2 ]">
+            <div class="candy-img-wrapper lollipop-img-wrapper unit unit-pull-s-1-2 [ xs-1 s-1-2 ]">
+              <div class="candy-img candy-img-lollipop">
+              </div>
             </div>
           </div>
         </div>
@@ -130,15 +131,16 @@
           <div class="candy-desc candy-desc-white section-light font-dark">
             <div class="candy-content-wrapper relative text-center">
               <div class="candy-content w-1 absolute pin-c">
-                <i class="icon i-64 push">
-                  <img src="images/icons/icon-lollipop.svg" alt="">
+                <i class="icon icon-lollipop i-64 push">
                 </i>
                 <h3 class="font-300 push-1-2">Placeholder text.</h3>
                 <p>The photo below is also a placeholder</p>
                 <a href="#" class="btn btn-thin">Place order &gt;</a>
               </div>
             </div>
-            <div class="candy-img candy-img-placehold">
+            <div class="candy-img-wrapper">
+              <div class="candy-img candy-img-placehold">
+              </div>
             </div>
           </div>
         </div>
@@ -147,19 +149,21 @@
           <div class="candy-desc candy-desc-grey font-dark">
             <div class="candy-content-wrapper relative text-center">
               <div class="candy-content w-1 absolute pin-c">
-                <i class="icon i-64 push">
-                  <img src="images/icons/icon-lollipop.svg" alt="">
+                <i class="icon icon-lollipop i-64 push">
                 </i>
                 <h3 class="font-300 push-1-2">Placeholder text.</h3>
                 <p>We'll make a custom lollipop<br>just the way you like it.</p>
                 <a href="#" class="btn btn-thin">Place order &gt;</a>
               </div>
             </div>
-            <div class="candy-img candy-img-placehold-grey">
+            <div class="candy-img-wrapper">
+              <div class="candy-img candy-img-placehold">
+              </div>
             </div>
           </div>
         </div>
-      </div>   <!-- End grid -->
+      </div>
+      <!-- End grid -->
     </section>
 
     <!-- Contact Us -->
@@ -170,7 +174,7 @@
         <div class="grid wrapper section-light">
           <div class="store-image unit unit-push-m-2-5 [ xs-1 s-1 m-3-5 ]">
             <div class="embed embed-3by2">
-              <img class="embed-item" src="images/photos/store.jpg" alt="Photo of the outside of our store.">
+              <img class="embed-item img-flex" src="images/photos/store.jpg" alt="Photo of the outside of our store.">
             </div>
           </div>
           <div class="store-details unit unit-pull-m-3-5 [ xs-1 s-1 m-2-5 ] gutter pad-t-2 pad-b-2">
@@ -196,7 +200,7 @@
         </div>
       </div>
 
-    <!-- Form -->
+      <!-- Form -->
       <div class="form">
         <div class="max-length">
           <strong class="brand-color font-300 push">Send us a sweet little note.</strong>
