@@ -400,7 +400,7 @@ th, td {
 @media only screen and (min-width: 67em) {
 
   .store-details {
-    padding: 1.4rem;
+    padding: 1.4rem 1.4rem 0 1.4rem;
   }
 
 }
