@@ -14,8 +14,10 @@
 <body>
 
   <ul class="skip-links">
-    <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#candy">Jump to candy</a></li>
+    <li><a href="#prices">Jump to prices</a></li>
+    <li><a href="#contact">Jump to contact</a></li>
   </ul>
 
   <header role="banner" class="masthead grid grid-middle">
@@ -63,7 +65,7 @@
         </a>
       </li>
       <li class="unit [ xs-1 s-1-2 m-1-4 ]">
-        <a href="#" class="card m-border-right pad-t pad-b text-center link-box">
+        <a href="#prices" class="card m-border-right pad-t pad-b text-center link-box">
           <i class="icon icon-price i-64 push-1-2">
           </i>
           <div class="font-dark">
@@ -98,10 +100,10 @@
     <section class="pad-b-2" id="candy">
       <!-- Candy Intro-->
       <div class="candy-intro block text-center">
-        <div class="candy-content block relative">
-          <div class="max-length gutter pin-c absolute">
-            <h2 class="font-300 push-1-2">Candy!</h2>
-            <p class="max-length gutter-2">From lollipops to gummi bears, we've got just the thing in store for your sweet tooth.</p>
+        <div class="candy-content-wrapper block relative">
+          <div class="candy-content w-1 gutter absolute pin-c">
+            <h2 class="font-300 push-1-4">Candy!</h2>
+            <p>From custom lollipops to gummi bears, we've got just the thing in store to satify your sweet tooth.</p>
           </div>
         </div>
         <div class="candy-img-wrapper">
@@ -113,13 +115,13 @@
       <div class="candy-wrapper grid">
         <div class="unit [ xs-1 s-1 ]">
           <div class="candy section-light section-adapt grid" id="lollipop">
-            <div class="candy-content candy-content-lollipop unit unit-push-s-1-2 [ xs-1 s-1-2 ] relative text-center">
-              <div class="w-1 absolute pin-c">
+            <div class="candy-content-wrapper candy-content-wrapper-lollipop unit unit-push-s-1-2 [ xs-1 s-1-2 ] relative text-center">
+              <div class="candy-content w-1 gutter absolute pin-c">
                 <i class="icon icon-lollipop i-64 push-1-4">
                 </i>
-                <h3 class="font-300 push-1-4">One-of-a-kind lollipops.</h3>
-                <p class="max-length gutter-2 push-1-2">We make custom lollipops just the way you like it. Choose the colour, toppings and toppings!</p>
-                <a href="#" class="btn btn-thin" aria-label="Place order for One-of-a-kind lollipop">Place order &gt;</a>
+                <h3 class="font-300 push-1-4">Custom lollipops</h3>
+                <p class="push-1-2">We make one-of-a-kind lollipops just for you. Choose the colour, toppings and flavour!</p>
+                <a href="#" aria-label="Place order for custom lollipops" class="btn btn-thin" aria-label="Place order for One-of-a-kind lollipop">Place order &gt;</a>
               </div>
             </div>
             <div class="candy-img-wrapper candy-img-wrapper-lollipop unit unit-pull-s-1-2 [ xs-1 s-1-2 ] chop">
@@ -131,13 +133,13 @@
         <!-- Tootsie -->
         <div class="unit [ xs-1 s-1-2 ]">
           <div class="candy section-white">
-            <div class="candy-content relative text-center">
-              <div class="w-1 absolute pin-c">
+            <div class="candy-content-wrapper relative text-center">
+              <div class="candy-content w-1 gutter absolute pin-c">
                 <i class="icon icon-tootsie i-64 push-1-4">
                 </i>
-                <h3 class="font-300 push-1-4">Tootsie rolls.</h3>
-                <p class="max-length gutter-2 push-1-2">Tootie rolls</p>
-                <a href="#" class="btn btn-thin">Place order &gt;</a>
+                <h3 class="font-300 push-1-4">Tootsie rolls</h3>
+                <p class="push-1-2">Sweet and perfectly chewy. Our tootsie rolls are available in every fruity flavour imaginable.</p>
+                <a href="#" aria-label="Place order for tootsie rolls" class="btn btn-thin">Place order &gt;</a>
               </div>
             </div>
             <div class="candy-img-wrapper">
@@ -149,13 +151,13 @@
         <!-- Dino -->
         <div class="unit [ xs-1 s-1-2 ]">
           <div class="candy section-light">
-            <div class="candy-content relative text-center">
-              <div class="w-1 absolute pin-c">
+            <div class="candy-content-wrapper relative text-center">
+              <div class="candy-content w-1 gutter absolute pin-c">
                 <i class="icon icon-dino i-64 push-1-4">
                 </i>
-                <h3 class="font-300 push-1-4">Dino eggs.</h3>
-                <p class="max-length gutter-2 push-1-2">Hatch these dino eggs open to find hundreds of smarties!</p>
-                <a href="#" class="btn btn-thin">Place order &gt;</a>
+                <h3 class="font-300 push-1-4">Dino eggs</h3>
+                <p class="push-1-2">Hatch these milk-chocolate dino eggs open to discover hundreds of smarties!</p>
+                <a href="#" aria-label="Place order for dino eggs" class="btn btn-thin">Place order &gt;</a>
               </div>
             </div>
             <div class="candy-img-wrapper">
@@ -169,39 +171,38 @@
 
     <section class="prices pad-t pad-b" id="prices">
       <div class="wrapper gutter">
-        <h2 class="brand-color font-300 push-1-2 text-center">Prices!</h2>
-        <p class="max-length text-center">At Beau's Bonbons we charge by the pound!</p>
+        <h2 class="brand-color font-300 push-1-4 text-center">Prices</h2>
+        <p class="max-length text-center push-2">We don't charge by the candy, we charge by the pound!</p>
 
         <table>
-          <caption class="micro font-medium">Prices for candy based on weight.</caption>
+          <caption class="milli normal font-medium push-0">Prices for candy based on weight.</caption>
 
           <thead>
             <tr>
               <th>&nbsp;</th>
-              <th scope="col">5lbs</th>
-              <th scope="col">10lbs</th>
-              <th scope="col">15lbs</th>
+              <th scope="col" class="text-right">1lb</th>
+              <th scope="col" class="text-right">2lbs</th>
+              <th scope="col" class="text-right">5lbs</th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
               <th scope="row">Lollipops</th>
-              <td>$10</td>
-              <td>$20</td>
-              <td>$30</td>
+              <td class="text-right">$5.95</td>
+              <td class="text-right">$8.95</td>
+              <td class="text-right">$11.95</td>
             </tr>
             <tr>
               <th scope="row">Tootsie rolls</th>
-              <td>$40</td>
-              <td>$70</td>
-              <td>$100</td>
+              <td class="text-right">$4.95</td>
+              <td class="text-right">$7.95</td>
+              <td class="text-right">$10.95</td>
             </tr>
             <tr>
               <th scope="row">Dino eggs</th>
-              <td>$50</td>
-              <td>$70</td>
-              <td>$90</td>
+              <td class="text-right">$5.95</td>
+              <td class="text-right">$8.95</td>
+              <td class="text-right">$12.95</td>
             </tr>
           </tbody>
         </table>
@@ -210,8 +211,8 @@
 
     <!-- Contact Us -->
     <section class="contact pad-t-2 pad-b-2 gutter" id="contact">
-      <h2 class="brand-color font-300 text-center push-1-2">Contact us!</h2>
-      <p class="max-length text-center">Trust us, we don't bite.</p>
+      <h2 class="brand-color font-300 text-center push-1-4">Contact us</h2>
+      <p class="max-length text-center push-2">Trust us, we don't bite.</p>
 
       <div class="store-location push-2">
         <div class="grid wrapper section-light">
@@ -246,12 +247,12 @@
       <!-- Form -->
       <div class="form">
         <div class="max-length">
-          <h3 class="brand-color font-300 push-1-2">Send us a sweet little note.</h3>
+          <h3 class="brand-color font-300 giga push-1-2 text-center">Send us a sweet little note.</h3>
 
           <form class="push-0 milli" method="POST" action="https://formspree.io/matthewpeixoto@gmail.com">
             <div class="push-1-2">
               <label for="name">Name</label>
-              <input class="island-1-2 milli" id="name" name="name">
+              <input class="milli" id="name" name="name">
             </div>
             <div class="push-1-2">
               <label for="email">Email</label>
@@ -267,6 +268,7 @@
               <label for="subject">Subject</label>
               <select id="subject" name="subject">
                 <option>General question</option>
+                <option>I want candy!</option>
                 <option>Where's my candy?</option>
               </select>
             </div>
@@ -274,7 +276,7 @@
               <label for="details">What's up?</label>
               <textarea id="details" name="message"></textarea>
             </div>
-            <div>
+            <div class="text-center">
               <button class="btn btn-full" type="submit">Send message</button>
             </div>
           </form>
@@ -284,7 +286,7 @@
 
   </main>
 
-  <footer role="contentinfo" class="footer section-light grid text-center island-2">
+  <footer role="contentinfo" class="footer section-light grid text-center gutter pad-t-2 pad-b-2">
     <div class="unit [ xs-1 s-1 ] push">
       <small>Copyright © 2016 Beau’s Bonbons.</small>
     </div>

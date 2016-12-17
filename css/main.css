@@ -7,6 +7,7 @@ body {
   min-width: 320px;
 }
 
+/* ------------- =General -------------- */
 .section-white {
   background-color: #fff;
 }
@@ -40,12 +41,12 @@ body {
 .btn-full {
   background-color: #ff4081;
   border-radius: 8px;
-  border: 1px solid #f50057;
+  border: none;
 }
 
 .btn-full:hover {
   background-color: #ff80ab;
-  border: 1px solid #ff4081;
+  border: none;
 }
 
 .btn-thin:hover {
@@ -64,7 +65,6 @@ body {
 }
 
 /* ------------- =Header -------------- */
-
 .masthead {
   background-color: #3f51b5;
 }
@@ -113,7 +113,7 @@ header li {
 }
 
 .nav-check:focus ~ .nav-label {
-  outline: 2px solid #ff80ab;
+  outline: 2px solid #000;
 }
 
 .nav-check:checked:hover ~ .nav-label {
@@ -148,7 +148,6 @@ header li {
 }
 
 /* ------------- =Banner -------------- */
-
 .banner {
   height: calc(100vh - 80px);
   max-height: 640px;
@@ -190,8 +189,7 @@ header li {
 
 }
 
-/* ------------- =Link Cards -------------- */
-
+/* ------------- =Cards -------------- */
 .cards {
   border-bottom: 2px solid #fff;
 }
@@ -240,7 +238,6 @@ header li {
 }
 
 /* ------------- =Candy -------------- */
-
 .candy-intro {
   height: 100vh;
 
@@ -253,8 +250,12 @@ header li {
   height: 520px;
 }
 
-.candy-content {
+.candy-content-wrapper {
   height: 65%;
+}
+
+.candy-content {
+  max-width: 25em;
 }
 
 .candy-img-wrapper {
@@ -313,7 +314,7 @@ header li {
     background-color: #fff;
   }
 
-  .candy-content-lollipop {
+  .candy-content-wrapper-lollipop {
     height: 100%;
   }
 
@@ -337,10 +338,26 @@ header li {
 
 }
 
-/* ------------- =Contact us -------------- */
+/* ------------- =Prices -------------- */
 
+thead {
+  background-color: #f2f2f2;
+
+}
+
+th, td {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/* ------------- =Contact us -------------- */
 .store-details dt {
   width: 5em;
+}
+
+.form input,
+.form select,
+.form textarea {
+  border: 1px solid #d6d6d6;
 }
 
 @media only screen and (min-width: 67em) {
@@ -352,7 +369,6 @@ header li {
 }
 
 /* ------------- =Footer -------------- */
-
 .footer a {
   padding-right: .7rem;
 
