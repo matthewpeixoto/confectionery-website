@@ -365,6 +365,10 @@ th, td {
   background: url("../images/photos/about.jpg") center center / cover no-repeat;
 }
 
+.about-body {
+  margin-left: 0;
+}
+
 @media only screen and (min-width: 46em) {
 
   .about-img {
@@ -374,6 +378,8 @@ th, td {
   .about-content-wrapper {
     display: block;
     visibility: visible;
+
+    text-shadow: 0 0 100px #000;
   }
 
 }
