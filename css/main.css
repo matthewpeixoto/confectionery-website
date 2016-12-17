@@ -171,7 +171,7 @@ header li {
 
 .banner-img {
   height: 60%;
-  background: url("../images/photos/lollipop-sprite.jpg") center bottom / auto 202% no-repeat;
+  background: url("../images/photos/lollipop.jpg") center bottom / auto 202% no-repeat;
 }
 
 @media only screen and (min-width: 46em) {
@@ -285,7 +285,7 @@ header li {
 }
 
 .candy-img-lollipop {
-  background-image: url("../images/photos/lollipop-sprite.jpg");
+  background-image: url("../images/photos/lollipop.jpg");
   background-size: auto 202%;
 }
 
