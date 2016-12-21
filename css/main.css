@@ -64,15 +64,6 @@ body {
   text-decoration: underline;
 }
 
-.btn-footer {
-  color: #666;
-}
-
-.btn-footer:hover {
-  background-color: transparent;
-  color: #666;
-}
-
 /* ------------- =Header -------------- */
 
 .masthead {
@@ -177,6 +168,7 @@ header li {
 @media only screen and (min-width: 46em) {
 
   .banner {
+    height: calc(100vh - 120px);
     max-height: 960px;
     min-height: 500px;
   }
@@ -400,19 +392,27 @@ th, td {
 @media only screen and (min-width: 67em) {
 
   .store-details {
-    padding: 1.4rem 1.4rem 0 1.4rem;
+    padding: 1.4rem 1.4rem 0;
   }
 
 }
 
 /* ------------- =Footer -------------- */
 
-.footer-link {
+.btn-footer {
   padding-right: .7rem;
 
   border-right: 1px solid #d6d6d6;
 
+  color: #666;
   line-height: 1;
+}
+
+.btn-footer:hover {
+  background-color: transparent;
+  color: #666;
+
+  border-right: 1px solid #d6d6d6;
 }
 
 .footer .footer-last {
