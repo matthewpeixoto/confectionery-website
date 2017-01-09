@@ -76,7 +76,7 @@ body {
   color: #fff;
 }
 
-header a:hover {
+.masthead a:hover {
   transition: 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
 
   color: #9fa8da;
